@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --background: rgb(54, 79, 107);
+  --button: rgb(252, 81, 133);
+  --text: rgb(245, 245, 245);
+  --other: rgb(63, 193, 201);
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.hide {
+  display: none;
+}
+.main-container {
+  max-width: 80%;
+}
+
+.freecodecamp-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 25px;
+}
+
+i {
+  color: yellow;
+}
+
+.input-container,
+.info-container {
+  width: 400px;
+  border-radius: 8px;
+  display: flex;
+}
+
+.input-container {
+  background-color: var(--text);
+  margin: 50px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 25px;
+}
+
+.info-container {
+  background-color: var(--other);
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.title {
+  color: var(--text);
+  letter-spacing: 3px;
+  font-size: 42px;
+}
+
+.input-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--background);
+}
+
+.input-inner-container {
+  margin-bottom: 12px;
+}
+
+.text-input {
+  width: 250px;
+  height: 30px;
+  background-color: var(--text);
+  border: none;
+  border-bottom: 2px solid var(--button);
+  padding: 6px;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.check-btn {
+  color: var(--text);
+  background-color: var(--button);
+  padding: 8px 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.check-btn:hover {
+  background-color: var(--other);
+}
+
+.result-container p {
+  font-size: 24px;
+}
+
+.info-container p {
+  font-size: 22px;
+}
+
+.result-container {
+  margin-top: 8px;
+}
